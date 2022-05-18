@@ -30,8 +30,8 @@
 				</nav>
 				<footer>
 					<ul class="icons">						
-						<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/-pedromagalhaes" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/cammag" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 				</footer>
@@ -50,8 +50,7 @@
 										<h2>Olá!</h2>										
 									</header>
 									<h4>Seja bem-vindo(a) à página do meu portfólio de projetos.</h4>
-									<p>Aqui apresento sobre minhas habilidades para resolver problemas de negócios com ferramentas e conceitos de Ciência de Dados, a partir de projetos que se utilizam de dados públicos.<br />
-									Há informações disponíveis sobre minhas experiências, habilidades desenvolvidas e conceitos aplicados relacionados a Ciência de Dados.</p>
+									<p>Aqui apresento sobre minhas habilidades para resolver problemas de negócios com ferramentas e conceitos de Ciência de Dados, a partir de projetos que se utilizam de dados públicos.	Há informações disponíveis sobre minhas experiências e soluções aplicadas.</p>
 								</div>
 							</section>
 
@@ -59,8 +58,8 @@
 						<section id="one">
 							<div class="container">								
 								<h3>Sobre mim</h3>								
-								<p>Me chamo Pedro Magalhães e sou formado em Engenharia Mecânica. No momento estou em busca de recolocação e participo de grupos de estudos que envolvem estatística e ferramentas aplicadas a Ciência de Dados, por meio de projetos de negócios com dados disponibilizados.</p>
-								<p>Procuro oportunidades para trabalhar como Cientista de Dados, a fim de buscar melhorias em tomadas de decisão por meio da análise e do estudo de dados.</p>
+								<p>Me chamo Pedro Magalhães e sou formado em Engenharia Mecânica. Atualmente sou Pós-Graduando pela PUC-Minas em Inteligência Artificial e Aprendizado de Máquina. Me apaixonei por Ciência de Dados logo quando comecei a estudar, depois de uma palestra que assisti na faculdade e me impressionei com o potencial que possui. Desde então me aprofundei e inclusive apresentei o projeto de curso da minha graduação relacionado à previsão de falhas de turbofans por meio de Machine Learning.</p>
+								<p>Tenho como objetivo trabalhar e atuar como Cientista de Dados, buscando soluções para negócios a partir de métodos estatísticos e de Machine Learning.</p>
 							</div>
 						</section>	
 
@@ -96,10 +95,12 @@
 							<section id="three">
 								<div class="container">									
 									<h2>Experiências</h2>									
-									<h4>Estágio em logística</h4>	
+									<h4>Estágio em Logística - STELLANTIS</h4>	
 									<p>Atuei programando o sequenciamento da produção de veículos em uma fábrica automotiva e desenvolvendo soluções para gargalos na linha. Fui responsável pela construção de dashboards com o intuito de apresentar indicadores relevantes para a produção.</p>
-									<h4>Projeto de extensão </h4>
+									<h4>Projeto de Extensão - UERJ</h4>
 									<p>Participei de um projeto relacionado ao tratamento, análise e entendimento de dados relacionados ao desenvolvimento de Covid de algumas cidades em que as prefeituras disponibilizaram os dados. Contribuí na manutenção de Dashboards interativos que auxiliavam nas análises e eram disponibilizados para a população.</p>
+									<h4>Projeto de Iniciação Científica - UERJ</h4>
+									<p>Fui voluntário em um projeto de física óptica aplicada. Consistia em planejar o desenvolvimento de uma esteira elétrica automatizada que contivesse uma lâmina para cortar um feixe Gaussiano. Seria então possível analisar o seu comportamento. Para esse planejamento foi utilizado Arduino.</p>
 								</div>
 							</section>
 
@@ -108,11 +109,21 @@
 								<div class="container">
 									<h3>Projetos de Ciência de Dados</h3>					
 									<div class="features">
-										<article>
-											<a href="#" class="image"><img src="images/turbofan.jpg" alt="" /></a>
+										<article>											
+											<a href="#" class="image"><img src="images/rosmann.jpeg"/></a>
+											<div class="inner">
+												<h4>Previsão de vendas das farmácias Rossmann</h4>
+												<p>A partir de um conjunto de dados da Rossmann, pude analisar e então construir um modelo de Machine Learning que pudesse prever as vendas nas próximas 6 semanas. Em seguida, construí uma API que calculasse a previsão para o conjunto de dados inserido com o modelo treinado. Publiquei a API no Heroku e a vinculei a um bot no Telegram, que iria responder a previsão para um determinado id de farmácia, depois de solicitada.<a href="https://github.com/cammag/rossmann-sales-predict"> <b>Saiba mais.</b></a></p>
+											</div>
+											<a href="#" class="image"><img src="images/cross_sell_img.png"/></a>
+											<div class="inner">
+												<h4>Health Insurance Cross Sell Prediction</h4>
+												<p>Cross Sell é uma estratégia para tentar vender um produto para um cliente que já adquiriu outro produto do mesmo vendedor. Nesse projeto, o objetivo é prever quais clientes de uma rede de seguros de saúde estariam interessados em um plano de seguro de carros também. Implementei uma solução utilizando Learning to Rank, em que um modelo de Machine Learning preveu uma pontuação para cada pessoa e rankeou o conjunto de dados, indicando os clientes mais suscetíveis a aderir ao outro seguro. Construí uma API que calcula o a pontuação de cada cliente para um conjunto de dados inserido e publiquei no Heroku. Vinculei a API ao Google Sheets em que é mostrada a previsão para cada registro inserido.<a href="https://github.com/cammag/health-insurance-cross-sell-prediction"> <b>Saiba mais.</b></a></p>
+											</div>
+											<a href="#" class="image"><img src="images/turbofan.jpg"/></a>
 											<div class="inner">
 												<h4>Construção de um modelo de manutenção preditiva para falha de turbofans de aviões</h4>
-												<p>Construí um modelo de predição de falha de turbofans para identificar se estariam próximas ou não de uma falha completa. Ao final, o modelo apresentou 80% de precisão na previsão da falha das turbofans. Utilizei python, matplotlib e seaborn para as análises e LightGBM para treinar o modelo.</p>
+												<p>Construí um modelo de predição de falha de turbofans para identificar se estariam próximas ou não de uma falha completa. Ao final, o modelo apresentou 80% de precisão na previsão da falha das turbofans. Utilizei python, matplotlib e seaborn para as análises e LightGBM para treinar o modelo.<a href="https://github.com/cammag/Turbofan-analysis"> <b>Saiba mais.</b></a></p>
 											</div>
 										</article>
 									</div>
@@ -126,7 +137,7 @@
 									<h3>Entre em contato</h3>
 									<ul class="contact">
 										<li class="icon solid fa-envelope"><a href="#"> pedrocorrea.magalhaes@gmail.com</a></li>
-										<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/pedromagalhaes-"> LinkedIn</a></li>
+										<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/-pedromagalhaes"> LinkedIn</a></li>
 										<li class="icon brands fa-github"><a href="https://github.com/cammag"> GitHub</a><br /></li>
 									</ul>
 								</div>
